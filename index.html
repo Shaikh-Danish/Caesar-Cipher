@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Caesar Cipher Encoder & Decoder</title>
+				<link rel="stylesheet" href="css/style.css"></link>
+</head>
+<body>
+				<main>
+								<section class="text-section">
+												
+												<div class="header">
+																<div class="label sub-heading blue-clr">VIEW</div>
+																<div class="text-label main-heading blue-clr">
+																				Plain Text
+																</div>
+												</div>
+												
+												<div class="text-box">
+																<textarea class="plain-text"></textarea>
+												</div>
+												
+								</section>
+								
+								<section class="caesar-box">
+												
+												<div class="header">
+																
+																<div class="btn-box">
+																				<button class="encode active gray-clr">ENCODE</button>
+																				<button class="decode gray-clr">DECODE</button>
+																</div>
+																
+																<div class="select-box main-heading orange-clr">
+																				Caesar cipher
+																</div>
+												</div>
+												
+												<div class="shift-box">
+																
+																<div class="header">
+																				<label class=" control-title">
+																								SHIFT
+																				</label>
+																				<div class="blank"></div>
+																</div>
+																
+																<div class="shift-value">
+																				<button class="btn shift-down gray-clr">-</button>
+																				<input type="number" name="" id="num" value="7">
+																				<div class="show-encrypt gray-clr">a <img src="img/right-arrow.png" alt=""> h</div>
+																				<button class="btn shift-up gray-clr">+</button>
+																</div>
+																
+												</div>
+												
+												<div class="alpha-box">
+																
+																<div class="header">
+																				<div class=" control-title">
+																								ALPHABET
+																				</div>
+																				<div class="blank"></div>
+																</div>
+																
+																<div class="alphabet-box">
+																				<input type="text" name="" id="encode-letter" value="abcdefghijklmnopqrstuvwxyz" disabled>
+																</div>
+												</div>
+												
+												<div class="features-box">
+																
+																<div class="case-box">
+																				
+																				<div class="header">
+																								
+																								<div class=" control-title">
+																												CASE STRATEGY
+																								</div>
+																								<div class="case-list">
+																									<select class="case-type">
+																										<option value="maintain">Maintain case</option>
+																										<option value="ignore">Ignore case</option>
+																									</select>
+																									<img src="img/down-arrow.png" alt="">
+																								</div>
+																				</div>
+																				
+																</div>
+																
+																<div class="char-box">
+																				
+																				<div class="control-title">
+																								FOREIGN CHARS			
+																				</div>
+																				
+																				<div>
+																								<button class="btn char-include gray-clr" style="color:#000;">Include</button>
+																								<button class="btn char-ignore gray-clr">Ignore</button>																
+																				</div>
+																				
+																</div>
+																
+												</div>												
+								</section>
+								
+								<section class="text-section">			
+												<div class="header">
+																<div class="label sub-heading blue-clr">VIEW	</div>					
+																<div class="cipher-label main-heading blue-clr">
+																				Cipher Text
+																</div>																
+												</div>
+												
+												<div class="text-box">
+																<textarea class="enc-text" disabled></textarea>
+												</div>												
+								</section>
+								
+				</main>
+				<script src="js/main.js"></script>
+</body>
+</html>
